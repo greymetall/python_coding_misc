@@ -32,14 +32,13 @@ def train_gen():
     print('наш поезд выглядит так: цифра - № вагона, True - свет в вагоне горит, False - свет не горит:')
     print(train)
     print(f'где {n + 1} вагон - это и есть 1 вагон, т.к. поезд замкнут в кольцо')
-    print(locals())
     return train
 
 
 def train_scan(train):
     # this function scans ours crazy-train according to the algorithm and calculates how many wagons it includes
-    current_wagon = 2
     print('сейчас я в 1 вагоне')
+    current_wagon = 2
     print(f'иду в {current_wagon} вагон')
     while True:
         while not train[current_wagon]:
