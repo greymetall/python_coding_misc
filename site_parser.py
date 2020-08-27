@@ -12,13 +12,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 options = webdriver.ChromeOptions()
 options.add_argument('headless') # опция для работы в безголовом режиме
 driver = webdriver.Chrome(options=options) # загрузка драйврера
-wait = WebDriverWait(driver, 15)  # Задаем ожидание (н-р до появления элемента)
+wait = WebDriverWait(driver, 15)  # задаем ожидание (н-р до появления элемента)
 driver.get('https://skillbox.ru/code')  # переходим на страницу
 button = driver.find_element(By.XPATH, '//div[2]/section[1]/button') # поиск кнопки
 driver.execute_script("window.scrollTo(0, 1500)") # прокрутка страницы вниз
 button.click()
 button.click() # два клика по кнопке для развёртывания списка курсов
-time.sleep(3) # ожидание перед парсингом пока страница загрузится
+time.sleep(3) # ожидание перед парсингом 3 сек. чтобы страница загрузилась
 page = driver.page_source # загрузка страницы из вебдрайвера
 driver.close() # закрываем драйвер
 

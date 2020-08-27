@@ -2,7 +2,7 @@
 
 # Anagrams
 
-# This application reverses all the words of input text:
+# This script reverses all the words of input text:
 # E.g. "abcd efgh" => "dcba hgfe"
 # All non-letters symbols stays on the same places:
 # E.g. "a1bcd efg!h => "d1cba hgf!e"
