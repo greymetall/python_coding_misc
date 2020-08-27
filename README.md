@@ -1,2 +1,3 @@
-# simple_projects
-my samples of coding
+# simple projects on Python
+
+Scripts on Python for misc tasks
